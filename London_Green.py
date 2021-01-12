@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 %matplotlib inline
 
 
-gis = GIS(url='https://pythonapi.playground.esri.com/portal', username='arcgis_python', password='amazing_arcgis_123')
+gis = GIS(url='https://pythonapi.playground.esri.com/portal', username='your username', password='your password')
 
 search_item = gis.content.search('title:Multispectral Landsat', 'Imagery Layer', outside_org=True)[0]
 landsat = search_item.layers[0]
